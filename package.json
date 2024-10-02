@@ -1,0 +1,32 @@
+{
+  "name": "secure-programming-2024",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "dev": "npm-run-all -p dev:server dev:client",
+    "dev:server": "npm run dev -w @sp24/server",
+    "dev:client": "npm run dev -w @sp24/client",
+    "dev:newclient": "npm run dev -w @sp24/newclient",
+    "clean": "npm run clean --workspaces"
+  },
+  "workspaces": [
+    "pkg/common",
+    "pkg/client",
+    "pkg/server",
+    "pkg/newclient"
+  ],
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@tsconfig/recommended": "^1.0.7",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "esbuild": "0.23.1",
+    "globals": "^15.9.0",
+    "npm-run-all": "^4.1.5",
+    "source-map-support": "^0.5.21",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.7.0"
+  }
+}

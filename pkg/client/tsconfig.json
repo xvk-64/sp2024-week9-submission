@@ -1,0 +1,18 @@
+{
+  "extends": ["@tsconfig/node20/tsconfig.json", "../../tsconfig.json"],
+  "compilerOptions": {
+    "outDir": "./dist",
+    "paths": {
+      "@sp24/common/*": ["../common/src/*"]
+    },
+    "composite": true,
+    "lib": ["dom"],
+    "jsx": "react"
+  },
+  "include": ["src"],
+  "references": [
+    {
+      "path": "../common"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "files": [],
+  "include": [],
+  "compilerOptions": {
+    "pretty": true,
+    "sourceMap": true,
+    "declarationMap": true,
+    "declaration": true,
+    "composite": true
+  },
+  "references": [
+    {
+      "path": "pkg/common"
+    },
+    {
+      "path": "pkg/client",
+    },
+    {
+      "path": "pkg/server"
+    }
+  ]
+}
